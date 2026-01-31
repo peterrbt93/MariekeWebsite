@@ -1,20 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { outreachComponent } from './outreach.component';
-import { outreachRoutingModule } from './outreach-routing.module';
-
+import { OutreachComponent } from './outreach.component';
+import { OutreachRoutingModule } from './outreach-routing.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    outreachRoutingModule
+    OutreachRoutingModule
   ],
   exports: [
-    outreachComponent
+    OutreachComponent
   ],
   declarations: [
-    outreachComponent
+    OutreachComponent
   ],
   providers: [
   ],

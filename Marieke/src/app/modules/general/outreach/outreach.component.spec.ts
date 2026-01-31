@@ -1,23 +1,25 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
-import { outreachComponent } from './outreach.component';
+import { OutreachComponent } from './outreach.component';
 
-describe('outreachComponent', () => {
-  let component: outreachComponent;
-  let fixture: ComponentFixture<outreachComponent>;
+describe('OutreachComponent', () => {
+  let component: OutreachComponent;
+  let fixture: ComponentFixture<OutreachComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
+        NoopAnimationsModule
       ],
-      declarations: [outreachComponent]
+      declarations: [OutreachComponent]
     }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(outreachComponent);
+    fixture = TestBed.createComponent(OutreachComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -3,14 +3,14 @@ import { CommonModule } from '@angular/common';
 
 import { InstagramDOMService } from '../../../../instagram-dom.service';
 
-import { instagramRoutingModule } from './instagram-routing.module';
+import { InstagramRoutingModule } from './instagram-routing.module';
 
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    instagramRoutingModule
+    InstagramRoutingModule
   ],
   providers: [InstagramDOMService]
 })

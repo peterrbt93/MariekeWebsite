@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { aboutmeComponent } from './aboutme.component';
+import { AboutMeComponent } from './aboutme.component';
 import { aboutmeRoutingModule } from './aboutme-routing.module';
 import { SanitizedHtmlPipe } from './sanitized-html.pipe';
 
@@ -11,10 +11,10 @@ import { SanitizedHtmlPipe } from './sanitized-html.pipe';
     aboutmeRoutingModule
   ],
   exports: [
-    aboutmeComponent
+    AboutMeComponent
   ],
   declarations: [
-    aboutmeComponent,
+    AboutMeComponent,
     SanitizedHtmlPipe
   ],
   providers: [

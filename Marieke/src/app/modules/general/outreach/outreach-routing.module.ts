@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { outreachComponent } from './outreach.component';
-import { instagramComponent } from './instagram/instagram.component';
+import { OutreachComponent } from './outreach.component';
+import { InstagramComponent } from './instagram/instagram.component';
 
 const routes: Routes = [
   {
-    path: '', component: outreachComponent, children: [
-      //{ path: '', component: instagramComponent },
-      { path: 'instagram', component: instagramComponent, },
+    path: '', component: OutreachComponent, children: [
+      //{ path: '', component: InstagramComponent },
+      { path: 'instagram', component: InstagramComponent, },
       {
         path: '',
         loadChildren: () => import(`../outreach/instagram/instagram.module`)
@@ -22,4 +22,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class outreachRoutingModule { }
+export class OutreachRoutingModule { }

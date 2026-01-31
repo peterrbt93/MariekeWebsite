@@ -2,13 +2,13 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './modules/general/home/home.component';
-import { aboutmeComponent } from './modules/general/aboutme/aboutme.component';
-import { outreachComponent } from './modules/general/outreach/outreach.component';
+import { AboutMeComponent } from './modules/general/aboutme/aboutme.component';
+import { OutreachComponent } from './modules/general/outreach/outreach.component';
 
 
 const routes: Routes = [
   { path: '', component: HomeComponent, },
-  { path: 'about', component: aboutmeComponent, },
+  { path: 'about', component: AboutMeComponent, },
   { path: 'outreach', 
         // component: outreachComponent, 
         loadChildren: () => import('./modules/general/outreach/outreach.module')

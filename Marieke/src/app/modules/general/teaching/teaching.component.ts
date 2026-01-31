@@ -10,7 +10,7 @@ import { fade } from '../../../animations';
     fade
   ]
 })
-export class teachingComponent {
+export class TeachingComponent {
 
   constructor(private seoService: SeoService) {
 

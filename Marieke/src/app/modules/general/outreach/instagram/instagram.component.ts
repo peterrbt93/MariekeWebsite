@@ -13,7 +13,7 @@ import { fade } from '../../../../animations';
     fade
   ]
 })
-export class instagramComponent implements OnInit  {
+export class InstagramComponent implements OnInit  {
   constructor(private instagram: InstagramDOMService) {}
 
   ngOnInit() {

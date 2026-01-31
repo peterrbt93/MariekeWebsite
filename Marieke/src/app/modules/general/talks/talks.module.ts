@@ -1,27 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { talksComponent } from './talks.component';
-import { talksRoutingModule } from './talks-routing.module';
-import { FormsModule } from '@angular/forms';
-import { ReactiveFormsModule } from '@angular/forms';
 
-import { CategoryPipe } from './category.pipe';
+import { TalksComponent } from './talks.component';
 import { SafePipe } from './safe.pipe';
+import { TalksRoutingModule } from './talks-routing.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    talksRoutingModule,
-    FormsModule,
-    ReactiveFormsModule,
+    TalksRoutingModule
   ],
   exports: [
-    talksComponent
+    TalksComponent
   ],
   declarations: [
-    talksComponent,
-    CategoryPipe,
-    SafePipe,
+    TalksComponent,
+    SafePipe
   ],
   providers: [
   ],

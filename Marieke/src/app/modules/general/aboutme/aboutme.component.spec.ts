@@ -1,23 +1,29 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
-import { aboutmeComponent } from './aboutme.component';
+import { AboutMeComponent } from './aboutme.component';
+import { SanitizedHtmlPipe } from './sanitized-html.pipe';
 
-describe('aboutmeComponent', () => {
-  let component: aboutmeComponent;
-  let fixture: ComponentFixture<aboutmeComponent>;
+describe('AboutMeComponent', () => {
+  let component: AboutMeComponent;
+  let fixture: ComponentFixture<AboutMeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
+        NoopAnimationsModule
       ],
-      declarations: [aboutmeComponent]
+      declarations: [
+        AboutMeComponent,
+        SanitizedHtmlPipe
+      ]
     }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(aboutmeComponent);
+    fixture = TestBed.createComponent(AboutMeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

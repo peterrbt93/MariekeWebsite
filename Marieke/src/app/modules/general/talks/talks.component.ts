@@ -20,7 +20,7 @@ declare const bootstrap: any;
     fade
   ]
 })
-export class talksComponent {
+export class TalksComponent {
 
   itemsLoaded: boolean;
   items: Item[];

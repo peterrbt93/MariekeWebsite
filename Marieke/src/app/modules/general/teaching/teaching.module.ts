@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { teachingComponent } from './teaching.component';
-import { teachingRoutingModule } from './teaching-routing.module';
+import { TeachingComponent } from './teaching.component';
+import { TeachingRoutingModule } from './teaching-routing.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    teachingRoutingModule
+    TeachingRoutingModule
   ],
   exports: [
-    teachingComponent
+    TeachingComponent
   ],
   declarations: [
-    teachingComponent
+    TeachingComponent
   ],
   providers: [
   ],

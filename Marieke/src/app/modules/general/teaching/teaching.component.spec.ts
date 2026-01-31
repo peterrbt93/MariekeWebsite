@@ -1,23 +1,25 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
-import { teachingComponent } from './teaching.component';
+import { TeachingComponent } from './teaching.component';
 
-describe('teachingComponent', () => {
-  let component: teachingComponent;
-  let fixture: ComponentFixture<teachingComponent>;
+describe('TeachingComponent', () => {
+  let component: TeachingComponent;
+  let fixture: ComponentFixture<TeachingComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
+        NoopAnimationsModule
       ],
-      declarations: [teachingComponent]
+      declarations: [TeachingComponent]
     }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(teachingComponent);
+    fixture = TestBed.createComponent(TeachingComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

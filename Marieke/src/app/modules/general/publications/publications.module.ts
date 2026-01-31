@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { publicationsComponent } from './publications.component';
-import { publicationsRoutingModule } from './publications-routing.module';
+import { PublicationsComponent } from './publications.component';
+import { PublicationsRoutingModule } from './publications-routing.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    publicationsRoutingModule
+    PublicationsRoutingModule
   ],
   exports: [
-    publicationsComponent
+    PublicationsComponent
   ],
   declarations: [
-    publicationsComponent
+    PublicationsComponent
   ],
   providers: [
   ],

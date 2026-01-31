@@ -1,81 +1,76 @@
 <div class="container py-2" @fade>
-  <div >
-    <div class="container">
-        <div class="row">
-          <div class="col-1">
+  <div class="row">
+    <div class="col-1">
+    </div>
+    <div class="col-10">
+      <h3><br>
+        Publications
+      </h3>
+      <p>
+        Here is a list of my papers, including links to pdf-files which are freely accessible to anyone.
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-1 col-md-1">
+    </div>
+    <div class="col-12 col-md-10">
+      <div class="panel-group accordion" id="accordion" role="tablist">
+        <div *ngFor="let pub of publications; let i=index;" class="panel panel-default">
+          <div class="panel-heading" role="tab">
 
-          </div>
-          <div class="col-10">
-            <h3><br>
-              Publications
-            </h3>
-            <p>
-              Here is a list of my papers, including links to pdf-files which are freely accessible to anyone.
-            </p>
-          </div>
-          
-        </div>
-        <div class="row">
-            <div class="col-1 col-md-1">
-            </div>
-            <div class="col-12 col-md-10">
-                <div class="panel-group accordion" id="accordion" role="tablist">
-                  <div *ngFor="let pub of publications; let i=index;" class="panel panel-default">
-                    <div class="panel-heading" role="tab">
-                      
-                        <a id="collapse" class="collapsed" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#panelsStayOpen-collapse'+i">
-                          <h4 class="panel-title">
-                            {{pub.title}}
-                          </h4>
-                          <div class="authors">
-                            <p>
-                              {{pub.authors}} {{pub.date}}
-                            </p>
-                            <div class="row">
-                              <div class="col-9">
-                                <p>
-                                  {{pub.addInfo}}
-                                </p>
-                              </div>
-                              <div class="col-3">
-                                <p class="number">
-                                  {{"#"+ (i+1)}}
-                                </p>
-                              </div>
-                            </div>
-                            
-                            
-                          </div>
-                          
-                        </a>
-                    
-                    </div>
-                    <div [attr.id]="'panelsStayOpen-collapse'+i" class="panel-collapse collapse in" role="tabpanel">
-                      <div class="panel-body">
-                        <div class="row">
-                          <div class="col-10 col-lg-11">
-                            <p style="margin-top: 20px;">
-                              Abstract: <br><br>
-                            </p>
-                          </div>
-                          <div class="col-2 col-lg-1">
-                            <a [attr.href]="pub.pdfLink" target="_blank" type="button" class="nga-btn-arxiv">
-                              <img src="../../../../assets/icons/arxiv.svg" class="arxiv">
-                            </a>
-                          </div>
-                          
-                        </div>
-                        
-                        <p>
-                          {{pub.body}}
-                        </p>
-                        
-                      </div>
-                    </div>
+            <a id="collapse" class="collapsed" type="button" data-bs-toggle="collapse"
+              [attr.data-bs-target]="'#panelsStayOpen-collapse'+i">
+              <h4 class="panel-title">
+                {{pub.title}}
+              </h4>
+              <div class="authors">
+                <p>
+                  {{pub.authors}} {{pub.date}}
+                </p>
+                <div class="row">
+                  <div class="col-9">
+                    <p>
+                      {{pub.addInfo}}
+                    </p>
+                  </div>
+                  <div class="col-3">
+                    <p class="number">
+                      {{"#"+ (i+1)}}
+                    </p>
                   </div>
                 </div>
+
+
+              </div>
+
+            </a>
+
+          </div>
+          <div [attr.id]="'panelsStayOpen-collapse'+i" class="panel-collapse collapse in" role="tabpanel">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-10 col-lg-11">
+                  <p style="margin-top: 20px;">
+                    Abstract: <br><br>
+                  </p>
+                </div>
+                <div class="col-2 col-lg-1">
+                  <a [attr.href]="pub.pdfLink" target="_blank" type="button" class="nga-btn-arxiv">
+                    <img src="../../../../assets/icons/arxiv.svg" class="arxiv">
+                  </a>
+                </div>
+
+              </div>
+
+              <p>
+                {{pub.body}}
+              </p>
+
             </div>
+          </div>
         </div>
+      </div>
     </div>
   </div>
 </div>

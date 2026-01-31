@@ -1,23 +1,33 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { ReactiveFormsModule } from '@angular/forms';
 
-import { talksComponent } from './talks.component';
+import { TalksComponent } from './talks.component';
+import { SafePipe } from './safe.pipe';
 
-describe('talksComponent', () => {
-  let component: talksComponent;
-  let fixture: ComponentFixture<talksComponent>;
+describe('TalksComponent', () => {
+  let component: TalksComponent;
+  let fixture: ComponentFixture<TalksComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
+        NoopAnimationsModule,
+        HttpClientTestingModule,
+        ReactiveFormsModule
       ],
-      declarations: [talksComponent]
+      declarations: [
+        TalksComponent,
+        SafePipe
+      ]
     }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(talksComponent);
+    fixture = TestBed.createComponent(TalksComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

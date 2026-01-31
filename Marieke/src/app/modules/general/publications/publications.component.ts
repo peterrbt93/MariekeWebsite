@@ -14,7 +14,7 @@ import { Author } from '../models/author';
     fade
   ]
 })
-export class publicationsComponent {
+export class PublicationsComponent {
 
   publications: Publication[];
 

@@ -13,7 +13,7 @@ import { About } from '../models/about';
     fade
   ]
 })
-export class aboutmeComponent {
+export class AboutMeComponent {
 
   abouts: About[];
 

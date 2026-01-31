@@ -11,7 +11,7 @@ import { fade } from '../../../animations';
     fade
   ]
 })
-export class outreachComponent {
+export class OutreachComponent {
 
   constructor(private seoService: SeoService) {
 
