@@ -37,13 +37,13 @@ export class aboutmeComponent {
       new About(
         "About me",
         ` <p>
-            My field of research is high energy theory, more specifically quantum field theory and string theory. 
-            I am interested in nonperturbative physics, phase structures, and defects, which I study using generalized symmetries and their 't Hooft anomalies.
-            My work in string theory centers on constructions of supersymmetric quantum field theories,
-            where I bring in tools from geometry and algebraic topology to understand strongly-coupled fixed points, defects, and dualities.
+            I am a former theoretical physicist with a background in high energy theory, specifically quantum field theory and string theory. 
+            My research focused on nonperturbative physics, phase structures, and defects, which I studied using generalized symmetries and their 't Hooft anomalies.
+            My work in string theory centered on constructions of supersymmetric quantum field theories,
+            where I used tools from geometry and algebraic topology to understand strongly-coupled fixed points, defects, and dualities.
           </p>
           <p>
-            I am currently employed as a <i>Research Assistant Professor</i> at the <i>Simons Center for Geometry and Physics</i>.
+            I currently do advanced machine learning and analytics for <b>Half/Space</b>, one of Europe's top AI companies.
           </p>  
         `
       ),
@@ -51,7 +51,12 @@ export class aboutmeComponent {
       new About(
         "Positions",
         ` 
-        <p class="dateTitle">09/2022 &mdash; current</p>
+        <p class="dateTitle">2025 &mdash; current</p>
+          <p>
+            <b>Senior Data Scientist</b><br>
+            <i>Half/Space</i><br>
+          </p>
+        <p class="dateTitle">09/2022 &mdash; 2024</p>
           <p>
             <b>Research Assistant Professor</b><br>
             <i>SCGP, Stony Brook U.</i> | <i>Stony Brook, NY, USA</i><br>
