@@ -43,7 +43,7 @@ export class AboutMeComponent {
             where I used tools from geometry and algebraic topology to understand strongly-coupled fixed points, defects, and dualities.
           </p>
           <p>
-            I currently do advanced machine learning and analytics for <b>Half/Space</b>, one of Europe's top AI companies.
+            I currently do advanced machine learning and analytics for <b>Halfspace</b>, one of Europe's top AI companies.
           </p>  
         `
       ),
@@ -54,7 +54,7 @@ export class AboutMeComponent {
         <p class="dateTitle">2025 &mdash; current</p>
           <p>
             <b>Senior Data Scientist</b><br>
-            <i>Half/Space</i><br>
+            <i>Halfspace</i><br>
           </p>
         <p class="dateTitle">09/2022 &mdash; 2024</p>
           <p>
