@@ -13,12 +13,7 @@ const routes: Routes = [
         path: '',
         loadChildren: () => import(`../outreach/instagram/instagram.module`)
           .then(mod => mod.InstagramModule)
-      },
-      {
-        path: 'mapping',
-        loadChildren: () => import(`../outreach/mapping/mapping.module`)
-          .then(mod => mod.MappingModule)
-      },
+      }
     ]
   }
 ];

@@ -19,7 +19,6 @@ import { OutreachModule } from './modules/general/outreach/outreach.module';
 import { TalksModule } from './modules/general/talks/talks.module';
 import { TeachingModule } from './modules/general/teaching/teaching.module';
 import { PublicationsModule } from './modules/general/publications/publications.module';
-import { InstagramModule } from './modules/general/outreach/instagram/instagram.module';
 import { AboutmeModule } from './modules/general/aboutme/aboutme.module';
 
 
@@ -47,11 +46,10 @@ import { AboutmeModule } from './modules/general/aboutme/aboutme.module';
     TalksModule,
     TeachingModule,
     PublicationsModule,
-    InstagramModule,
     AboutmeModule
   ],
   exports: [MatToolbarModule],
-  providers: [InstagramDOMService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

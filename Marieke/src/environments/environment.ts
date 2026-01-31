@@ -2,10 +2,10 @@ export const environment = {
   production: false,
   application:
   {
-    name: 'angular-starter',
-    angular: 'Angular 16.2.6',
-    bootstrap: 'Bootstrap 5.3.2',
-    fontawesome: 'Font Awesome 6.4.2',
+    name: 'Marieke van Beest',
+    angular: 'Angular 18.2.5',
+    bootstrap: 'Bootstrap 5.3.3',
+    fontawesome: 'Font Awesome 6.6.0',
   },
   urlMovies: './assets/params/json/mock/talks.json',
 

@@ -1,3 +1,2 @@
 User-agent: *
-Disallow:
-Sitemap: https://angular.ganatan.com/sitemap.xml
+Allow: /
